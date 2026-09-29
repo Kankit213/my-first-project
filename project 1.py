@@ -1,20 +1,197 @@
-print("hello world")
-student = {
-    "name": "subhash",
-    "subject" : {
-        "phy" : 89,
-        "chem" : 95,
-        "math" : 90
+# to YouTube practice set
 
-    }
-}
-print(student.items())
-print( list(student.items()))
-pairs = list(student.items())
-print(pairs[0])
-print(pairs[0])
+#type conversion
+a = 5
+b = 5.4
+sum = a + b
+print(sum)
 
-print("hello world")
-print(student)
-print(1234)
-print("hello women")
+a = "10"
+b = int(a)
+print(b+5)
+
+a = 55.8
+b = float(a)
+print(b+5)
+
+print(float(3+5))
+
+value = 9.99
+print(int(value))
+
+#boolean and list me casting
+
+print(bool(0))
+print(bool(5))
+print(bool(""))
+print(bool("5"))
+
+print(list("abc"))
+print(list((1,2,3,4)))
+print(list(range(15)))
+
+#tuples
+numbers = [1.2,3,4,5,6,6,5,7,4,3,2]
+print(tuple(numbers))
+print(set(numbers)) #duplicate hat gaye
+
+print(round(9.99))
+
+#input in python
+
+# val = float(input("entered some value : "))
+# print("you entered :",val)
+# print(type(val),val)
+#
+# value = float(input("entered some value : "))
+# print("you entered : ",value)
+# print(type(value),value)
+
+# name = input("what is your name? : ")
+#
+# age = input("what is your age? : ")
+# marks = input("what is your marks? : ")
+# print("name",name)
+# print("age",age)
+# print("marks","name","age"),
+
+# a = first = int(input("entered first number: "))
+# b = second = int(input("entered second number: "))
+# c = third = int(input("entered third number: "))
+# print("sum =",a + b + c)
+
+# side = float(input("enter square side : "))
+# print("ares : ",side**2)
+#
+# a = float(input("enter first number: "))
+# b = float(input("enter second number: "))
+#
+# print("average : ",(a+b)/20)
+#
+
+#string
+
+#indexing
+fruit = ["apple", "banana", "cherry"]
+print(fruit[(2)])
+print(len(fruit))
+
+#slicing
+
+fruits = "apnea collage"
+print(fruits[2:9])
+name = "ankit kumar chaurashiya"
+print(name[0:])
+
+#slicing negative marks
+
+fruits = "apple mango"
+print(fruits[-7:-1])
+
+#str function
+
+fruits = "apple banana mango"
+print(fruits.endswith("mango"))
+print(fruits.capitalize())
+print(fruits.replace("mango","guava"))
+print(fruits.find("le"))
+print(fruits.count("mango"))
+
+
+#conditional statement
+
+marks = 75
+
+if marks>=85 :
+    print("a grade")
+elif marks>=75:
+    print("b grade")
+else:
+    print("fail")
+
+marks = 79
+
+if marks>=90:
+    (print("a+ grade"))
+elif marks>=80:
+    (print("b+ grade"))
+elif marks>=70:
+    (print("a+ grade"))
+else:
+    print("fail")
+
+# day = "friday"
+# if day=="saturday" or day=="friday":
+#     print("holiday")
+#
+# username = input("Username: ").strip()
+# password = input("Password: ").strip()
+#
+# if username == "ankit" and password == "1234":
+#     print("Welcome, Ankit!")
+# elif username == "ankit":            # username सही, password गलत
+#     print("Password गलत है।")
+# else:
+#     print("User नहीं मिला।")
+#
+# fruits = input("fruits : ").strip()
+# vegetables = input("vegetables : ").strip()
+#
+# if fruits == "banana" or vegetables == "potato":
+#     print("healthy and fresh")
+# elif fruits == "apple" or vegetables == "cherry":
+#     print("good and fresh")
+# else:
+#     print("mite hai")
+#
+# signal = input("signal : ").strip()
+#
+# if signal== "red":
+#     print("you are dangerous")
+# elif signal == "green":
+#     print("you are good")
+# else:
+#     print("you are bad")
+
+
+#list in python
+
+marks = [7,8,9,5,4,3]
+print(marks[5])
+print(len(marks))
+
+#list slicing
+marks = [7,8,9,5,4,3,8,6,5,4]
+
+print(marks[0:])
+print(marks[:])
+print(marks[5])
+print(marks[-5:-1])
+
+
+#list method
+list = [1,2,3,5,]
+list.append(3)
+print(list)
+
+list.sort()
+print(list) #ascending order
+list.sort(reverse=True) #descending order
+print(list)
+
+list.reverse()
+print(list)
+
+list.insert(5,9)
+print(list)
+
+list = [1,2,5,4,5,6,5]
+list.remove(6)
+print(list)
+
+fruits = ["apple", "banana", "cherry", "mango"]
+last = fruits.pop()
+print(last)
+print(fruits)
+print(last)
+
