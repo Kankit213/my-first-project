@@ -195,3 +195,124 @@ print(last)
 print(fruits)
 print(last)
 
+#tuples in python
+
+a = (1,2,3,4,5,56,67,8)
+print(a[6])
+print(type(a))
+
+tup = (3,4,5,6,7,5,5,5)
+print(tup.index(5))
+
+print(tup.count(5))
+
+#dictionary in python
+
+dict = {
+    "name" : "ankit",
+    "age" : "18"
+
+}
+
+print(dict["name"])
+print(dict)
+print(dict["age"])
+
+#nested dictionary
+
+info = {
+    "name" : "ankit",
+    "age" : "18",
+    "marks" : 97,
+    "village" : "Marena",
+    "score" : {
+        "math" : 89,
+        "physics" : 80,
+        "chemistry" : 70,
+
+    }
+
+}
+print(info["name"])
+print(info["score"])
+print(info["village"])
+
+info["village"] = "nowadays"
+print(info["village"])
+
+info["marks"]  =  "82.2"
+print(info["marks"])
+print(info["score"]["physics"])
+info["professional"] = "cricket"
+print(info["professional"])
+print(info)
+info["nation"]  = "indian"
+print(info)
+
+#dict method
+
+info = {
+    "name" : "ankit",
+    "age" : "18",
+    "marks" : 97,
+    "village" : "Marena",
+    "score" : {
+        "math" : 89,
+        "physics" : 80,
+        "chemistry" : 70,
+
+    }
+
+}
+
+print(info.keys())
+print(info.values())
+print(info.items())
+print(info.get("score"))
+
+info.update({"girls" : "not allowed"})
+print(info)
+
+info.update({"nation" : "indian"})
+print(info)
+
+#set in python
+
+nums = {1,2,3,4,5,6,7,8}
+print(nums)
+print(type(nums))
+
+#set method
+
+set = set()
+print(set)
+
+nums = {1,2,3,4,5,6,7,8,9}
+
+print(nums.add(11))
+print(nums)
+print(nums.add(12))
+print(nums)
+print(nums.remove(12))
+print(nums)
+print(nums.remove(1))
+print(nums)
+
+print(nums.clear())
+print(nums)
+marks = {34,56,78,90,65,32,56.54,45}
+marks2 = {67,89,54,32,14,78,90}
+print(marks.pop())
+print(marks)
+print(marks2.pop())
+print(marks2)
+
+
+marks = {34,56,78,90,65,32,56,54,45}
+marks2 = {67,89,54,32,14,78,90}
+print(marks.union(marks2))
+print(marks.intersection(marks2))
+
+
+
+
