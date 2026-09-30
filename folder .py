@@ -924,3 +924,40 @@ while i<len(nums):
         print("finding---")
     i =i+1
 print("end of loops")
+
+#continue
+
+i = 0
+while i<=5:
+    if(i==4): #4 ko chokidar continue karo
+        i = i+1
+        continue
+    print(i)
+    i=i+1
+
+
+x = 0
+while x<=10:
+    if(x==7): # 7 ko chokidar continue karo
+        x = x+1
+        continue
+    print(x)
+    x = x+1
+
+x = 1
+while x<=10:
+    if(x%2==0): #odd number
+        x = x+1
+        continue
+    print(x)
+    x = x+1
+
+x = 1
+while x<=10:
+    if(x%2!=0): #even number
+        x = x+1
+        continue
+    print(x)
+    x = x+1
+
+
