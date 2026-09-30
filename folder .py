@@ -801,3 +801,126 @@ marks = {
     ("str",9.0)
 }
 print(marks)
+
+
+#loops in python
+#while loops.
+count = 1
+while count <= 5:
+    print("hello")
+    count += 1
+print(count)
+
+i=1
+while i<=10:
+    print("ankit",i)
+    i=i+1
+
+i = 5
+while i>=1:
+    print(i)
+    i -= 1
+
+i = 10
+while i>=2:
+    print(i)
+    i=i-1
+i = 1
+while i<=100:
+    print(i)
+    i=i+1
+i = 100
+while i>=1:
+    print(i)
+    i=i-1
+# i = 1
+# while i<=10:
+#     print(3*i)
+#     i=i+1
+# n = int(input("enter a number : "))
+# i = 1
+# while i<=10:
+#     print(n*i) #than 14 table in loops
+#     i=i+1
+# print("ended")
+#
+# n = int(input("enter the number : "))
+# i = 1
+# while i<=10:
+#     print(n*i)
+#     i=i+1
+# print("ended")
+
+inx = 0
+while inx< 10:
+    print(inx)
+    inx = inx+1
+
+inx = 0
+while inx <15:
+    print(2*inx)
+    inx = inx+1
+
+#traverse
+
+nums = [1,2,3,4,5,6,7,8,9,23,45,67]
+inx = 0
+while inx<len(nums):
+    print(nums[inx])
+    inx = inx+1
+habits = ["hello","good","morning","hii","everything"]
+inx = 0
+while inx<len(habits):
+    print(habits[inx])
+    inx+=1
+
+nums = [1,2,3,4,5,6,7,8,9,23,45,67]
+x = 45
+i = 0
+while i<len(nums):
+    if(nums[i]==x):
+        print("hello world",i)
+    else:
+        print("finding---")
+    i=i+1
+
+nums = [23,45,67,43,21,56,54,32,67,78,54]
+x = 54
+
+i = 0
+while i<len(nums):
+    if(nums[i]==x):
+        print("finally finding----",i)
+    else:
+        print("nahi mila")
+    i =i+1
+
+
+#break and continue
+i = 0
+while i<=5:
+    print(i)
+    if(i==4):
+        break
+    i=i+1
+
+i = 0
+while i<=10:
+    print(i)
+    if(i==7):
+        break
+    i = i+1
+print("end of loops")
+
+nums = [23,45,67,43,21,56,54,32,67,78,54]
+x = 54
+
+i = 0
+while i<len(nums):
+    if(nums[i]==x):
+        print("finally finding----",i)
+        break
+    else:
+        print("finding---")
+    i =i+1
+print("end of loops")
