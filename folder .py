@@ -811,6 +811,12 @@ while count <= 5:
     count += 1
 print(count)
 
+count = 1
+while count <=10:
+    print("hey mama")
+    count += 1
+print(count)
+
 i=1
 while i<=10:
     print("ankit",i)
@@ -1048,4 +1054,73 @@ for i in range(101,50 ,-1) : #descending order
 #     print(n*i)
 
 #pass statement in loops
+
+for i in range(10):
+    pass
+print("end the obj ")
+for i in range(5):
+    pass
+print("end ")
+
+n = 5
+sum  = 0
+for i in range(1,n+1):  #1 se lexer 5 tak add
+    sum  += i
+print("total sum =", sum)
+
+n = 100
+sum = 0
+for i in range(1 ,n+1): #1 se lexer 100 tak add
+    sum +=i
+print("total sum =", sum)
+
+n = 25
+sum = 0
+for  i in range(1,n+1):
+    sum += i
+print("total sum =", sum)
+
+n = 20
+sum = 0
+i = 1
+while i<=n:
+    sum += i
+    i += 1
+print("total sum =", sum)
+
+n = 10
+sum = 0
+i = 1
+while i<= n:
+    sum += i
+    i += 1
+print("total sum =", sum)
+
+n = 18
+sum = 0
+i = 1
+while i<=n:
+    sum +=i
+    i += 1
+print("total sum =", sum)
+
+n = 5
+fact = 1
+i = 1
+while i<=n:
+    fact *= i
+    i += 1
+print("total fact =", fact)
+
+n = 12
+fact = 1
+for i in range(1,n+1):
+    fact *= i
+print("total fact =", fact)
+
+n = 5
+fact = 1
+for i in range(1,n+1):
+    fact *= i #factorial = multiply to 5 to 1
+print("total fact =", fact)
 
