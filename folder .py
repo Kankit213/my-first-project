@@ -960,4 +960,92 @@ while x<=10:
     print(x)
     x = x+1
 
+#for loops
+
+fruits = ["mango","apple","papaya","guava","orange"]
+for value in fruits:
+    print(value)
+abc = [1,2,3,4,5]
+for value in abc:
+    print(value)
+name = ["ankit","Susumu","Aditya","pooja"]
+for value in name:
+    print(value)
+
+tup = (1,2,3,4,5,6)
+for val in tup:
+    print(val)
+
+str = "ankitchaurashiya"
+for char in str:
+    print(char)
+
+name = "ankitchaurashiya"
+for char in name:
+    if char == "i":
+        print("i found")
+        break
+    print(char)
+print("end")
+
+abc = (1,2,3,4,5)
+for value in abc:
+    if value == 4:
+        print("4 found")
+        break
+    print(value)
+print("end")
+
+abcd = [4,8,9,16,25,32,49,64,81,100]
+for val in abcd:
+    print(val)
+
+
+#leaner search
+abcd = [4,8,9,16,25,32,49,64,81,100,25,32]
+x = 32
+inx = 0
+for el in abcd:
+    if el== x:
+        print("found",inx)
+    inx+=1
+
+numbers = [12+34+56+67+67]
+total =0
+for num in numbers:
+    total=total+num
+print("total",total)
+
+numbers = [1200*345+800]
+total = 0
+for num in numbers :
+    total = total + num
+print("total",total)
+
+#range function in loops
+
+for i in range(14,20):
+    print(i)
+print(range(6))
+
+for i in range(2,16,2):  #even number print
+    print(i)
+
+for i in range(1,50,2): #odd numbers print
+    print(i)
+
+#practice
+
+for i in range(1,101): #ascending order
+    print(i)
+
+for i in range(101,50 ,-1) : #descending order
+    print(i)
+
+# User se number lo
+# n = int(input("enter a number: "))
+# for i in range(1,11):
+#     print(n*i)
+
+#pass statement in loops
 
