@@ -1124,3 +1124,4 @@ for i in range(1,n+1):
     fact *= i #factorial = multiply to 5 to 1
 print("total fact =", fact)
 
+

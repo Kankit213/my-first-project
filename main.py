@@ -23,6 +23,8 @@ print("avg : ", (a+b)/2)
 
 print("hello world")
 
+print("my firstn coding era")
+
 
 
 
