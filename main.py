@@ -25,6 +25,7 @@
 
 print("my firstn coding era")
 print(123)
+print("hello school")
 
 
 
