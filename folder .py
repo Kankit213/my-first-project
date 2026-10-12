@@ -228,9 +228,9 @@ print(str1)
 str1 = "This is the first string.\nWe are my own coding."
 print(str1)
 
-str1 = "Apnea"
-str2: str = "collage"
-final_str = str1 + str2
+my_str1 = "Apnea"
+my_str2: str = "collage"
+final_str = my_str1 + my_str2
 print(final_str)
 
 #indexing
@@ -1108,7 +1108,7 @@ n = 5
 fact = 1
 i = 1
 while i<=n:
-    fact *= i
+    fact *= i # 1 se lekar 5 tak multiply
     i += 1
 print("total fact =", fact)
 
@@ -1123,5 +1123,132 @@ fact = 1
 for i in range(1,n+1):
     fact *= i #factorial = multiply to 5 to 1
 print("total fact =", fact)
+
+
+#Function  definition in python 
+
+def add(a,b): #parameters
+    return  a+b
+sum = add(10,20)  #  function call : arguments
+print("sum =",sum)  
+
+def sub(a,b):
+    return a-b
+diff = sub(20,10)
+print("diff =",diff)
+
+diffn = sub(100,20)
+print("diffn =",diffn)
+
+
+def hello_world():
+    print("hello world")
+print(hello_world())    
+print(hello_world()) 
+print(hello_world()) 
+print(hello_world()) 
+print(hello_world()) 
+
+def print_name(name):
+    print("hello", name)
+    
+print_name("Ankitchaurashiya")
+
+
+
+def print_name(name):
+    print("hello : ", name)
+print_name("Annupriya")    
+
+def print_hello():
+    print("hello")
+print_hello()    
+print_hello()
+
+def avg_marks(a,b,c):
+    return (a+b+c)/3
+
+avg = avg_marks(90, 90, 78)
+print("Average marks:", avg)
+
+
+def avg_marks(a,b,c):
+    return(a+b+c)/3
+avg = avg_marks(90, 90, 95)
+print("Average marks:",avg)
+
+
+print("hello world" , end ="") # end = "" : print in same line
+print(" hello world my journey") #
+
+def cal_product(a,b=2):
+    print(a*b) #default parameter
+    return a*b
+cal_product(9)
+
+#practise
+
+cities = ["delhi " ,"rajsthan", "mumbai", "gova " , " chennai"] # list me len nikalna  
+heroes = ["thor","heroman","tejm","thor","saktiman ","heroman","tejmaro","thor",]
+print(heroes[2], end = " ")
+print(heroes[3], end = " ")
+
+def print_length(list):
+    return len(list)
+print(print_length(heroes))
+print(print_length(cities))
+
+cities = ["delhi " ,"rajsthan", "mumbai", "gova " , " chennai"]
+
+def print_list(list):
+    for city in list:
+        print(city, end = " ")
+print()        
+print_list(cities)       
+
+
+heroes = ["thor","heroman","tejm","thor","saktiman ","heroman","tejmaro","thor",]
+def print_length(list):
+    print(len(list))
+
+def print_list(list):
+    for item in list:
+        print(item)
+print_list(heroes)
+print()      
+
+
+def print_factorial(n):
+    fact = 1
+    for i in range(1,n+1):
+        fact *= i
+    print("total fact =", fact)
+print_factorial(7) # 1*2*3*4*5*6*7 = 5040 karna 
+
+x = 5
+factorial = 1
+for i in range(1,x+1):
+    factorial *= i
+print("total fact =", factorial)
+
+
+def converter(us_values): # us doller se inr me convert karna
+    inr_values = us_values * 82.74
+    print("usd Value:","usd = ",inr_values,"INR ")
+
+converter(100)
+
+
+def converter(us_values):
+    inr_values = us_values * 83
+    print("usd Value:","usd = ",inr_values,"INR ")
+
+converter(50)
+
+def converter(us_values):
+    inr_values = us_values * 84
+    print("usd values:","usd = ",inr_values,"inr")
+
+converter(79)    
 
 
