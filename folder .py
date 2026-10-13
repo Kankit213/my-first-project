@@ -1234,21 +1234,72 @@ print("total fact =", factorial)
 
 def converter(us_values): # us doller se inr me convert karna
     inr_values = us_values * 82.74
-    print("usd Value:","usd = ",inr_values,"INR ")
+    print(us_values,"usd = ",inr_values,"INR ")
 
 converter(100)
 
 
-def converter(us_values):
-    inr_values = us_values * 83
-    print("usd Value:","usd = ",inr_values,"INR ")
+def converter(usd_values):
+    inr_values = usd_values*83.00
+    print(usd_values,"USD =",inr_values,"INR")
+converter(1)   
 
-converter(50)
+#recuron loops hi hai in python 
 
-def converter(us_values):
-    inr_values = us_values * 84
-    print("usd values:","usd = ",inr_values,"inr")
+def show(n)  :
+    if (n==-1) :
+        return
+    print(n)
+    show(n-1)
+show(6)
 
-converter(79)    
+def show(n):
+    if(n  == 0):
+        return
+    print(n)
+    show(n-1)
+show(10)    
+
+def show(n):
+    if(n==0):
+        return
+    print(n)
+    show(n-1)
+    print("end")
+show(4)    
+
+#recorson factorial
+
+def fact(n):
+    if(n==1 or n==0):
+        return 1
+    return fact (n-1)*n
+print(fact(4))
+
+
+#practise 
+def fact(n):
+    if(n == 1 or n==0):
+        return 1
+    return fact(n-1)*n
+print(fact(5))
+
+
+def cal_sum(n):
+    if(n==0):
+        return 0
+    return cal_sum(n-1)+n
+sum = (cal_sum(50))    
+print(sum)
+
+
+def print_list(list,inx=0):
+    if(inx==len(list)):
+        return
+    print(list[inx])
+    print_list(list,inx+1)
+
+fruits = ["apple","banana","papaya","orange","mango"]
+print_list(fruits)
 
 
