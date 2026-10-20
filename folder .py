@@ -228,10 +228,10 @@ print(str1)
 str1 = "This is the first string.\nWe are my own coding."
 print(str1)
 
-my_str1 = "Apnea"
-my_str2: str = "collage"
-final_str = my_str1 + my_str2
-print(final_str)
+name = "Apnea \n"
+address = "collage"
+mera = name + address
+print(mera)
 
 #indexing
 
@@ -1301,5 +1301,232 @@ def print_list(list,inx=0):
 
 fruits = ["apple","banana","papaya","orange","mango"]
 print_list(fruits)
+
+
+def print_list(list,inx=0):
+    if(inx==len(list)):
+        return
+    print(list[inx])
+    print_list(list,inx+1)
+
+heroes = ["benten","motupatlu","balbeer","rani-pari","thorman"]
+print_list(heroes)
+
+#oop in python 
+
+class Student:
+    name = "ankit"
+    colour = "chikhna"
+s1 = Student()
+print(s1.name)
+print(s1.colour)
+
+#__init__ function 
+
+class Student:
+    #name = "priya"
+    def __init__(self,name,marks):
+        self.name = name
+        self.marks = marks
+        print("adding new daa in database.")
+
+s1 = Student("priya",96)
+print(s1.name, s1.marks)
+s2 = Student("rohit",78)
+print(s2.name, s2.marks)
+
+        
+#class & instance attributes
+
+class Student:
+    collage_name = "any university"
+    name = "pooja"
+
+    def __init__(self,name,msrks):
+        self.name = name
+        self.marks = marks
+        print("adding new data ")
+
+s1 = Student("karan",88)
+print(s1.name)
+
+#methods
+
+class Student:
+    collage_name = "abc collage"
+
+    def __init__(self,name,marks):
+        self.name = name 
+        self.marks = marks
+
+    def welcome(self):
+        print("welcome student",self.name)
+
+    def get_marks (self):
+        return self.marks
+
+s1 = Student("karan", 88)
+s1.welcome()
+print(s1.get_marks())
+
+#lets practise 
+
+class Student:
+    def __init__(self,name,marks):
+        self.name = name
+        self.marks = marks
+    def get_avg(self):
+        sum = 0
+        for val in self.marks:
+            sum +=val
+        print("hii",self.name,"your avg score",sum/3) 
+s1 = Student("aryan vindra",[89,98,98]) 
+s1.get_avg()
+
+s1.name = "viivek vindra"
+s1.get_avg()
+
+
+class Student:
+    def __init__(self,name,marks):
+        self.name = name
+        self.marks = marks
+    def get_avg(self):
+        sum = 0
+        for val in self.marks:
+            sum += val
+        print("hiii", self.name,"your avg score:"  ,sum/3)
+
+
+s1 = Student("aryan malhotra",[78,90,87])
+s1.get_avg()
+        
+#static methodd
+
+class Student:
+    @staticmethod
+    def collage():
+        print("apna collage")
+        
+s1 = Student()
+s1.collage()
+
+#IMPORYTANT
+
+##abstraction
+class Car:
+    def __init__(self):
+        self.clutch = False
+        self.acc = False
+        self.brake = False
+
+    def start(self):
+        self.clutch = True
+        self.acc = True
+        print("car started...")
+
+car1 = Car()
+car1.start()
+
+
+#practise 
+
+class Account:
+    def __init__(self,bal,acc):
+        self.balance = bal
+        self.account_no = acc
+
+    def debit(self,amount):
+        self.balance -= amount
+        print("Rs",amount, "was debited")
+        print("total balance = " , self.get_balance())
+
+    def credited(self,amount):
+        self.balance += amount
+        print("Rs",amount,"was created")
+        print("total balance = ",self.get_balance())
+
+    def get_balance(self):
+        return self.balance
+
+acc1 = Account(100000,12000)
+acc1.debit(12000)
+acc1.credited(12000)
+
+#del in python 
+
+class Student:
+    def __init__(self,name):
+        self.name = name
+s1 = Student("ankit")
+print(s1.name)
+del(s1.name)
+print(s1)
+
+#private attributes & methods
+
+class Account:
+    def __init__(self , acc_no,acc_pass):
+        self.acc_no = acc_no
+        self.__acc_pass = acc_pass
+    def reset_pass(self):
+        print(self.__acc_pass)
+s1 = Account("12345","abcdef")
+print(s1.acc_no)
+print(s1.reset_pass())
+
+#2 
+class Person:
+    __name = "anonymus"
+
+    def __hello(self):
+        print("hello person")
+    def welcome(self):
+        self.__hello()
+
+
+
+p1 = Person()
+print(p1.welcome())
+
+#inheritance
+#single line heritance
+
+class Car :
+    colour = "black"
+    @staticmethod
+    def start():
+        print("car started.")
+    @staticmethod
+    def stop():
+        print("car stopped")
+
+class Toyatacar(Car):
+    def __init__(self,name):
+        self.name = name
+car1 =  Toyatacar("fortuuner")
+car2 = Toyatacar("mercidies")
+print(car1.colour)
+
+#multi level heritance
+ 
+class Car:
+    @staticmethod
+    def start():
+        print("car started... ")
+    @staticmethod
+    def stop():
+        print("car stopped...")
+class Toyatacar(Car):
+    def __init__(self,brand):
+        self.brand = brand
+class Fortuner(Toyatacar):
+    def __init__(self,type):
+        self.type = type
+car1 = Fortuner("dieseal")
+car1.start()
+
+        
+
 
 
