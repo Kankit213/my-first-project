@@ -1526,7 +1526,55 @@ class Fortuner(Toyatacar):
 car1 = Fortuner("dieseal")
 car1.start()
 
+#multiple level 
+
+class A:
+    varA = "welcome to class A"   
+class B:
+    varB = "welcome to class B"    
+class C(A,B):
+    varC = "welcome to class C"
+
+c1 = C()
+print(c1.varC)
+print(c1.varB)
+print(c1.varA)
+
+#super method 
+
+class Car:
+    def __init__(self,type):
+        self.type = type
+    @staticmethod
+    def start():
+        print("car started")
+    @staticmethod
+    def stop ():
+        print("car stopped")
+class Toyatacar(Car):
+    def __init__(self,name,type):       
         
+        super().__init__(type)
+        self.name = name
+        super().start()
+
+      
+
+car1 = Toyatacar("priyus","electrician")
+print(car1.type)
+
+# class method 
+class Person:
+    name = "anonymous"
+    @classmethod
+    def changeName(cls,name):
+        cls.name = name
+
+p1 = Person()
+p1.changeName("rohit kumar")
+print(p1.name)
+print(Person.name)
+
 
 
 
