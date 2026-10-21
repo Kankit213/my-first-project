@@ -1575,6 +1575,71 @@ p1.changeName("rohit kumar")
 print(p1.name)
 print(Person.name)
 
+#property method 
 
+class Student:
+    def __init__(self,phy,chem,math):
+        self.phy = phy
+        self.chem = chem
+        self.math = math
+    @property
+    def percentage(self):
+        return f"{(self.phy + self.chem + self.math) / 3}  %"
+stu1 = Student(89,90,76)
+print(stu1.percentage)
+stu1.phy = 80
+print(stu1.percentage)
 
+#polymorphism : operator overloading 
 
+#__add__ use  complex number 
+
+class Complex:
+    def __init__(self,real,img):
+        self.real = real
+        self.img = img 
+    def showNumber(self):
+        print(self.real,"i +",self.img ,"j")
+    def __add__(self,num2):
+        newReal = self.real + num2.real
+        newImg = self.img +num2.img
+        return Complex(newReal , newImg)
+
+num1 = Complex(11,30)
+num1.showNumber()
+num2 = Complex(4,6)
+num2.showNumber()
+num3 = num1 + num2
+num3.showNumber()
+
+# __ (-)__ method 
+
+class Complex:
+    def __init__(self,real,img):
+        self.real = real
+        self.img = img 
+    def showNumber(self):
+        print(self.real,"i +", self.img,"j")
+    def __sub__(self,num2):
+        newReal = self.real -  num2.real
+        newImg = self.img - num2.img 
+        return Complex(newReal , newImg)
+num1 = Complex(34,20)
+num1.showNumber()
+num2 = Complex(12,10)
+num2.showNumber()
+num3 = num1 - num2
+num3.showNumber()
+
+# __gt__ method 
+
+class Order:
+    def __init__(self,item,price):
+        self.item = item
+        self.price = price
+    def __gt__(self,ord2):
+        return self.price> ord2 .price
+
+ord1 = Order("chipps",30)
+ord2 = Order("tea",34)
+print(ord1>ord2)  # 30>34 faise 
